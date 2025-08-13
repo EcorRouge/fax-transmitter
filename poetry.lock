@@ -385,22 +385,23 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "rococo"
-version = "1.1.6"
+version = "1.1.7"
 description = "A Python library to help build things the way we want them built"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "rococo-1.1.6-py3-none-any.whl", hash = "sha256:8858217423dd5103d115b46f8ef2fd711e2985922b462cb5e17c5f6ca69dc6fc"},
-    {file = "rococo-1.1.6.tar.gz", hash = "sha256:66aaace058116e7e63a831b9c269ba761ad9c2b4ae8e034298618f8648430a64"},
+    {file = "rococo-1.1.7-py3-none-any.whl", hash = "sha256:8447f53b0fc4bf8edf57fd2927446f8fe5476d1fd095c32f654d7c690b5ba7a2"},
+    {file = "rococo-1.1.7.tar.gz", hash = "sha256:826d03378f0a9e1daf664f156a147c833b7468b92fdd2788bcff2f2bc2aa1759"},
 ]
 
 [package.dependencies]
 boto3 = ">=1.28.55"
 python-dotenv = ">=1.0.0,<2.0"
+requests = {version = ">=2.31.0,<3.0", optional = true, markers = "extra == \"faxing\""}
 
 [package.extras]
-all = ["DBUtils (>=3.1,<4.0)", "PyMongo (>=4.6.3,<5.0)", "PyMySQL (>=1.1.1,<1.2)", "mailjet_rest (>=1.4.0,<2.0)", "pika (>=1.3.2,<1.4)", "psycopg2-binary (>=2.9.10,<3.0)", "surrealdb (>=1.0.4,<1.1)"]
+all = ["DBUtils (>=3.1,<4.0)", "PyMongo (>=4.6.3,<5.0)", "PyMySQL (>=1.1.1,<1.2)", "mailjet_rest (>=1.4.0,<2.0)", "pika (>=1.3.2,<1.4)", "psycopg2-binary (>=2.9.10,<3.0)", "requests (>=2.31.0,<3.0)", "surrealdb (>=1.0.4,<1.1)"]
 data = ["DBUtils (>=3.1,<4.0)", "PyMongo (>=4.6.3,<5.0)", "PyMySQL (>=1.1.1,<1.2)", "psycopg2-binary (>=2.9.10,<3.0)", "surrealdb (>=1.0.4,<1.1)"]
 data-common = ["DBUtils (>=3.1,<4.0)"]
 data-mongo = ["PyMongo (>=4.6.3,<5.0)"]
@@ -408,6 +409,7 @@ data-mysql = ["PyMySQL (>=1.1.1,<1.2)"]
 data-postgres = ["psycopg2-binary (>=2.9.10,<3.0)"]
 data-surreal = ["surrealdb (>=1.0.4,<1.1)"]
 emailing = ["mailjet_rest (>=1.4.0,<2.0)"]
+faxing = ["requests (>=2.31.0,<3.0)"]
 messaging = ["pika (>=1.3.2,<1.4)"]
 
 [[package]]
@@ -488,4 +490,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "35cd22febc5b1ceb6da56e4f09fa406278f0b109e4a3d526f297a5769d146fdd"
+content-hash = "7dc663ad4ff1ffd023456b37cda0fdec67a08565257d308278ccde88a4a0cd65"
