@@ -1,9 +1,9 @@
 from logging import Logger
+
 from rococo.config import BaseConfig
 from rococo.messaging import BaseServiceProcessor
-
-from .faxing.base import FaxService
-from .faxing.factory import fax_service_factory
+from rococo.faxing.base import FaxService
+from rococo.faxing.factory import fax_service_factory
 
 logger = Logger(__name__)
 
