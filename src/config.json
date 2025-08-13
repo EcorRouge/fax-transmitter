@@ -1,0 +1,12 @@
+{
+  "events": {
+    "DEFAULT": {
+      "subject": "Fax Document"
+    }
+  },
+  "configurations": [
+    {
+      "provider": "ifax"
+    }
+  ]
+}
